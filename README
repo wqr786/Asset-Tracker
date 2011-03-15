@@ -1,0 +1,57 @@
+===========================
+@Project Asset-Tracker
+@Author  Waqar
+@email   waqar@4acetech.com
+===========================
+
+Copyright notice:
+All the third party source code is copyrighted to them according to their
+terms. The source code of Asset-Tracker project can be used and modified.
+However, Asset-Tracker code cannot be sold or used for Commercial Purpose
+unless prior authorized permission is taken from the Author.
+
+TABLE OF CONTENTS
+=================
+1. Installation
+2. Database Setup
+
+
+1. INSTALLATION
+===============
+The project is developed on Codeigniter framework(http://www.codeigniter.com)
+In order to install this application, you will need a web server supporting
+PHP 5 or above, and MySQL 5 or above. For a general setup on Windows, you can
+get these bundled as a package with XAMPP (version 1.6+) server installation
+which you can get from http://www.apachefriends.org/en/xampp-windows.html
+
+Steps for Installation:
+1. Copy Asset-Tracker project folder and files in your root folder of web server
+(example: C:\htdocs\asset-tracker\)
+
+2. Create a database (usually you can create one through phpmyadmin - example:
+http://localhost/phpmyadmin [user: root and default password usually is "root"
+or blank])
+You may use any name while creating database. Example: asset-tracker
+
+2. Open folder /application/config/database.php and setup the following values
+with your database information in the file (these options already exist, you
+just have to set the values):
+$db['default']['hostname'] = 'localhost';   // host connection information
+$db['default']['username'] = 'root';	    // username for database
+$db['default']['password'] = 'root';	    // password for database
+$db['default']['database'] = 'intranet';    // database name
+
+3. Once done, please import the Database schema (refer to section 2)
+
+4. That's it, you can start using the application. You will need any good
+browser like Internet Explorer or Firefox, and simply go to the URL on which
+it is installed. Example: http://localhost/foldername
+So if you had the foldername as asset-tracker, then URL will be like:
+http://localhost/asset-tracker
+
+2. Database Setup
+=================
+1. For creation of Database, please refer to section 1
+2. Open the database through some tool, like phpMyAdmin
+3. Select the option of Import, and upload asset-tracker.sql from folder
+/schema
