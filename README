@@ -19,6 +19,7 @@ TABLE OF CONTENTS
 =================
 1. Installation
 2. Database Setup
+3. CodeIgniter User Guide
 
 
 1. INSTALLATION
@@ -60,3 +61,11 @@ http://localhost/asset-tracker
 2. Open the database through some tool, like phpMyAdmin
 3. Select the option of Import, and upload asset-tracker.sql from folder
 /schema
+
+3. CodeIgniter User Guide
+=========================
+
+**** IMPORTANT: PLEASE READ THIS IF GOING IN PRODUCTION MODE. ****
+
+This is shipped with Code Igniter in the folder of user_guide, which
+can be accessed and review. If in production mode, please remove this folder.
